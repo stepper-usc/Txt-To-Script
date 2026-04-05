@@ -13,7 +13,7 @@ class Parser
 
         /*
         * Parses lines from a istream, dividing sections of narration and dialog.
-        * Sves parsed data into a provided Book.
+        * Saves parsed data into a provided Book.
 
         * @param[in] istr
         *   input stream (typically a file) to be parsed
@@ -21,7 +21,7 @@ class Parser
         * @param[in] book
         *   Book class where parsed information will be stored.
         */
-        
+
         virtual void segment_lines(std::istream& istr, Book& book);
 
 
