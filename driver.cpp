@@ -11,4 +11,9 @@ int main(){
 
     p->segment_lines(f,c);
 
+    std::vector<std::string> story = c.get_story_lines();
+    for (auto line : story){
+        std::cout << line << std::endl;
+    }
+
 }
