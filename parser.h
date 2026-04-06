@@ -8,8 +8,8 @@ class Parser
 {
     public:
 
-        Parser();
-        virtual ~Parser();
+        Parser() = default;
+        virtual ~Parser() = default;
 
         /*
         * Parses lines from a istream, dividing sections of narration and dialog.
@@ -22,7 +22,7 @@ class Parser
         *   Book class where parsed information will be stored.
         */
 
-        virtual void segment_lines(std::istream& istr, Book& book);
+        virtual void segment_lines(std::istream& istr, Chapter& book) = 0;
 
 
 };

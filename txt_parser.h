@@ -14,11 +14,11 @@ class TxtParser : public Parser
         * @param[in] istr
         *   input stream (typically a file) to be parsed
 
-        * @param[in] book
-        *   Book class where parsed information will be stored.
+        * @param[in] chapter
+        *   Chapter class where parsed information will be stored.
         */
         
-        void segment_lines(std::istream& istr, Book& book);
+        void segment_lines(std::istream& istr, Chapter& chapter);
 
 
 };
